@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools >= 77.0.3", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "static-di"
+version = "0.1.0"
+description = "A type-based dependency injection library with scoping capabilities."
+authors = [{name = "Filip Dudziński"}]
+keywords = ["dependency injection", "type based", "scoped", "inversion of control", "ioc", "di", "typed", "injection", "annotation based"]
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+  "Development Status :: 4 - Beta"
+]
+license = "MIT"
+license-files = ["LICENSE.md"]
+dependencies = [
+    "typeguard>=4.4.2",
+]
+
+[project.urls]
+GitHub = "https://github.com/FIIFE/Static-DI"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
