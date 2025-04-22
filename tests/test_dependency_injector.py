@@ -2,9 +2,12 @@ import inspect
 from typing import Any, Callable, ForwardRef, Type, cast
 from unittest.mock import MagicMock
 import pytest
+from static_di.default_config import default_config
+from static_di.class_dependency import ClassDependency
 from static_di.dependency_injector import DependencyInjector
 from static_di.interfaces import IPartialConfig, IConfig, IDependencyFactory
-from static_di import Scope, ClassDependency, ValueDependency, default_config
+from static_di.scope import Scope
+from static_di.value_dependency import ValueDependency
 
 params = [
         inspect.Parameter("value", inspect.Parameter.POSITIONAL_OR_KEYWORD, annotation=Type),

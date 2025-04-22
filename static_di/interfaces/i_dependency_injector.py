@@ -1,7 +1,7 @@
 from abc import ABC
 import inspect
 from typing import TYPE_CHECKING, Callable, Tuple, Type
-from static_di import default_config
+from static_di.default_config import default_config
 
 if TYPE_CHECKING:
     from static_di.interfaces import IDependencyFactory, IScope, IPartialConfig, IClassDependency, IValueDependency

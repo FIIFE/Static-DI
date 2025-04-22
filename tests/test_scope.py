@@ -1,6 +1,6 @@
 from typing import Any, List, Type, Union, cast
 from unittest.mock import MagicMock
-from static_di import Scope
+from static_di.scope import Scope
 from static_di.interfaces import IClassDependency, IScopeSetter, IValueDependency, IDependencyFactory
 
 def test_init_without_parameters():

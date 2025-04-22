@@ -1,8 +1,10 @@
 from typing import Any, Type, cast
-from static_di import Scope, ClassDependency, ValueDependency
+from static_di.class_dependency import ClassDependency
 from static_di.default_config import default_config
 from static_di.get_signature_without_self import get_signature_without_self
 from static_di.interfaces import IClassDependency, IDependencyFactory, IValueDependency, IConfig, IDependencyInjectorFactory, IPartialConfig, IDependencyInjector
+from static_di.scope import Scope
+from static_di.value_dependency import ValueDependency
 
 class DependencyInjector(IDependencyInjector):
     def __new__(cls, config = {}, get_signature_without_self = get_signature_without_self, scope = Scope, class_dependency = ClassDependency, value_dependency = ValueDependency):
