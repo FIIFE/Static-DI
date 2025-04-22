@@ -282,6 +282,6 @@ Scope(
 
 resolve()
 ```
-### For more examples consult test_all.py file
+### For more examples consult [test_all.py](https://github.com/FIIFE/Static-DI/blob/main/tests/test_all.py) file
 ## Limitations
 - Type matching is done by the [typeguard library](https://typeguard.readthedocs.io/en/latest/index.html) so any limitation that applies to it applies here for example booleans are matched when requesting int, Callable parameter types are not respected.
